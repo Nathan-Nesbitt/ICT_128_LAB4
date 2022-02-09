@@ -19,7 +19,7 @@ To tests your answers simply run `./ICT_128_LAB_4.Tests.ps1`.
 
 # Questions
 
-1. Create a function that takes a job as a parameter, the function should stop the job using the name of the passed in job. Return nothing.
+1. Create a function that takes a job as a parameter, the function should stop the job using the Id of the passed in job. Return nothing.
     Explain in a comment how this parameter is being passed into the second cmdlet using the pipeline.
 2. Create a function that takes a job as a parameter, the function should stop the job 
     using the job object. Return nothing. Explain the difference between Q1 and this question in regards to how this parameter is being passed into the second mcdlet using the pipeline.

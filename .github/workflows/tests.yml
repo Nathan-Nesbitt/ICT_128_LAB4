@@ -1,0 +1,14 @@
+name: Test Powershell
+on: push
+
+jobs:
+  pester-test:
+    name: Lab 4 Tests
+    runs-on: windows-2019
+    steps:
+      - name: Check out repo        
+        uses: actions/checkout@v2
+      - run: Install-Module Pester -Force
+      - run: Import-Module Pester -PassThru
+      - run: |
+          ./ICT_128_LAB_4.Tests.ps1
