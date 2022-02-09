@@ -39,6 +39,8 @@ Describe 'Check-Q3' {
         
         $result = Q3 $filename
 
+        $result.Length | Should -BeGreaterThan 0
+
         foreach ($job in $result) {
             $job.Id | Should -Be $job.JobId
         }
